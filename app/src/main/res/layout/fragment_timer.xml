@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    tools:context="com.example.vaishjanardhan.myclock.Fragment.TimerFragment">
+
+
+    <TextView
+        android:id="@+id/time_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_zero"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_sixty" />
+
+    <TextView
+        android:id="@+id/hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/time_hr"
+        android:layout_marginStart="@dimen/size_five"
+        android:layout_toEndOf="@+id/time_hr"
+        android:text="@string/hr"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_twentyfive" />
+
+    <TextView
+        android:id="@+id/time_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_ten"
+        android:layout_toEndOf="@id/hr"
+        android:text="@string/time_zero"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_sixty" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/time_min"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/time_min"
+        android:text="@string/min"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_twentyfive" />
+
+    <TextView
+        android:id="@+id/time_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_ten"
+        android:layout_toEndOf="@id/min"
+        android:text="@string/time_zero"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_sixty" />
+
+    <TextView
+        android:id="@+id/sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/time_sec"
+        android:layout_marginStart="@dimen/size_five"
+        android:layout_toEndOf="@+id/time_sec"
+        android:text="@string/sec"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_twentyfive" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/size_thirty"
+        android:src="@drawable/clear" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_one"
+        android:layout_below="@id/time_hr"
+        android:layout_marginTop="@dimen/size_five"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/divider"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/one"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/two"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/three"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/four"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/five"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/six"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/seven"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/seven"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/eight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+
+            <TextView
+                android:id="@+id/nine"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_hundred"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/nine"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_fifty" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/zero"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_fifty" />
+    </LinearLayout>
+</RelativeLayout>

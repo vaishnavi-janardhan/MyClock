@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.vaishjanardhan.myclock.ViewPagerAdapter"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_ten">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_fifty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/time"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/time"
+            android:text="@string/pm"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/size_twenty" />
+
+        <RelativeLayout
+            android:id="@+id/extra"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_thirty"
+            android:layout_below="@id/time">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/size_ten"
+                android:text="@string/tomorrow"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/dropdown" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:layout_below="@id/extra"
+            android:layout_marginTop="@dimen/size_ten"
+            android:background="@color/divider" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/size_sixteen"
+            android:src="@drawable/plus" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
