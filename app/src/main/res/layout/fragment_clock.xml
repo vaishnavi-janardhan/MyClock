@@ -36,5 +36,4 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/size_sixteen"
         android:src="@drawable/location" />
-
 </RelativeLayout>

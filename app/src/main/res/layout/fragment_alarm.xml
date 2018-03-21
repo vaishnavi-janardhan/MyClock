@@ -25,7 +25,7 @@
             android:layout_alignBaseline="@id/time"
             android:layout_marginStart="5dp"
             android:layout_toEndOf="@+id/time"
-            android:text="@string/pm"
+            android:text="@string/am"
             android:textColor="@color/white" />
 
         <Switch
@@ -34,7 +34,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="@dimen/size_twenty" />
-
         <RelativeLayout
             android:id="@+id/extra"
             android:layout_width="match_parent"
@@ -74,7 +73,6 @@
             android:layout_gravity="end|bottom"
             android:layout_margin="@dimen/size_sixteen"
             android:src="@drawable/plus" />
-
 
     </RelativeLayout>
 
