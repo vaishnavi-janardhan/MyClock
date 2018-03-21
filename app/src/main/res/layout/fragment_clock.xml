@@ -24,8 +24,7 @@
         android:fontFamily="sans-serif"
         android:text="@string/date_today"
         android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_twenty" />
+        android:textColor="@color/white" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/location"
