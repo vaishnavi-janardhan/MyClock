@@ -13,11 +13,12 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">@dimen/text_ten</item>
+        <item name="android:textSize">@dimen/text_twelve</item>
     </style>
 
     <style name="menuTextAppearance" parent="TextAppearance.AppCompat.Widget.PopupMenu.Header">
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_sixteen</item>
     </style>
 
 </resources>

@@ -41,6 +41,13 @@
 
     </LinearLayout>
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginTop="@dimen/size_ten"
+        android:background="@color/divider" />
+
     <!-- View pager to swipe views -->
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
